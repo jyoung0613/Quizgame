@@ -1,113 +1,31 @@
-/* COMMON STYLES 
-  -------------------------------- */
-	
-	/* LAYOUT */
-		/* {position:absolute;} */
-		/* {position:relative;} */
-		/* {float:left;} */
-		/* {float:right;} */
-		/* {overflow:hidden;} */
-		/* {display:block;} */
-		/* {display:inline;} */
-		/* {display:none;} */
-		/* {margin:0} */
-		/* {padding:0;} */
-		/* {width:100%;} */
-	
-	/* TYPOGRAPHY */
-		/* {line-height:1;} */
-		/* {list-style-type:none;} */
-		/* {font-size:1em;} */
-		/* {font-style:italic;} */
-		/* {font-style:normal;} */
-		/* {font-weight:bold;} */
-		/* {font-weight:normal;} */
-		/* {text-align:center;} */
-		/* {text-align:right;} */
-		/* {text-align:left;} */
-		/* {text-decoration:underline;} */
-		/* {text-decoration:none;} */
-		/* {text-transform:uppercase;} */
-		/* {text-transform:none;} */
-	
-	/* COLOR */
-		/* {background-color: #fff;} */
-		/* {background-color: transparent;} */
-		/* {border: 1px solid #000;} */
-		/* {border: none;} */
-		/* {color: #000;} */
-		/* {border-radius: 0px;} */
-		/* {transition: all 0.3s ease-in-out;} */
-		
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
 
-/* BASE 
-	-------------------------------- */
-	body{}
-	::selection, ::moz-selection{}
-	.wrapper{}
+body {
+	  background-color:  var(--secondary-color);
+	  font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+.begin, .true, .false  {
+	color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+
+	}
+
+  .begin, .true, .false button:hover {
+    background-color: var(--tertiary-color);
+}
+
+.flex-row {
+	position: center;
+}
 
 
-/* HEADER
-	-------------------------------- */
-	.quizGame-header{}
 
-
-/* FOOTER
-	-------------------------------- */
-	.quizGame-footer{}
-	
-
-/* CONTENT
-	-------------------------------- */
-	.quizGame-content{}
-
-	/* LAYOUT */
-	
-	/* BASIC ELEMENTS */
-		div{}
-		p{}
-		blockquote{}
-		code{}
-		img{}
-		a{}
-		em{}
-		strong{}
-		pre{}
-	
-	/* HEADINGS */
-		h1{}
-		h2{}
-		h3{}
-		h4{}
-		h5{}
-		h6{}
-	
-	/* FORMS & BUTTONS */
-		form{}
-		fieldset{}
-		legend{}
-		label{}
-		input{}
-		textarea{}
-		select{}
-	
-	/* TABLES */
-		table{}
-		caption{}
-		tr{}
-		thead{}
-		th{}
-		tbody{}
-		td{}
-		tfoot{}
-	
-	/* LISTS */
-		dl{}
-		dt{}
-		dd{}
-		ol{}
-		ol li{}
-		ul{}
-		ul li{}
-	
-	/* … */
