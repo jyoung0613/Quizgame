@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-  <title>ECMAScript QuizGame</title>
-	<!-- styles -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-	
-</head>
-<body>
-	<header class="quizGame-header">
-		<div class="wrapper">
-		</div>
-	</header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  		<title>JavaScript QuizGame</title>
+	</head>
 
-	<div class="quizGame-content">
-		<div class="wrapper">
+	<body>
+		<div class="container">
+			<h1 class="welcome">ECMAScript Quiz</h1>
+			<h2 class="welcom">Select The Start Button When You Are Ready</h2>
+			<button id="start">Start</button>
+			<h2 id="timer" hidden></h2>
+			<h3 id="question"></h3>
+			<div>
+				<button id="true" hidden>True</button>
+				<button id="false" hidden>False</button>
+			</div>
+			<p id="completedTest" hidden></p>
 		</div>
-	</div>
-	
-	<footer class="quizGame-footer">
-		<div class="wrapper">
-		</div>
-	</footer>
-    <!-- scripts -->
-	 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
      <script type="text/javaScript" src="./assets/javaScript/script.js"></script>
-</body>
+	</body>
 </html>
