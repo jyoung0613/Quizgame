@@ -1,9 +1,9 @@
 var startButton = document.getElementById("start");
-var timerStart = document.getElementById("timer"); // countdown
-var questionEl = document.getElementById("question"); // questionElement
-var trueButton = document.getElementById("true");  // true
-var falseButton = document.getElementById("false");  // false
-var finishedTest = document.getElementById("finishedTest");  // completedTest
+var timerStart = document.getElementById("timer"); 
+var questionEl = document.getElementById("question"); 
+var trueButton = document.getElementById("true");  
+var falseButton = document.getElementById("false");  
+var finishedTest = document.getElementById("finishedTest");  
 var currentQuestion = 0;
 var timeLeft = 60;
 var score = 0;
@@ -20,5 +20,53 @@ trueButton.addEventListener("click", () => answerQuestion(true));
 falseButton.addEventListener("click", () => answerQuestion(false));
 
 function startQuiz() {
-    
+    startButton.hidden = true;
+    timerStart.hidden = false;
+    trueButton.hidden = false;
+    falseButton.hidden = false;
+
+
+    startTimer();
+    displayQuestion();
+}
+
+function startTimer() {
+    var timeInterval = setInterval(function () {
+
+        if (timeLeft > 1) {
+            timerStart.textContent = timeLeft + "seconds remaining";
+            timeLeft--;
+        } else if (timeLeft === 1) {
+            timerStart.textContent = timeLeft + "second remaining";
+            timeLeft--;
+        } else {
+            timerStart.textContent = ""
+            clearInterval(timeInterval)
+        }
+    }, 1000);
+}
+
+function answerQuestion(answer) {
+
+    if (currentQuestion <= questions.length && questions[currentQuestion].a === answer) {
+        score ++;
+
+    } else {
+        timeLeft -= 5;
+    }
+    currentQuestion ++;
+    displayQuestion();
+}
+
+function displayQuestion() {
+    if (currentQuestion >= questions.length) {
+        displayScoreMessage();
+    }
+    questionEl.textContent = questions[currentQuestion].q;
+
+}
+
+function displayScoreMessage() {
+    finishedTest.hidden = false;
+    finishedTest.textContent = ("The test is over.  Your score is " + score);
 }
