@@ -98,6 +98,15 @@ html {
     padding: 20px 0;
   }
 
+  footer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 25%;
+    box-sizing: border-box;
+    padding: 5px 0;
+  }
+
   /* start */
   #start {
     text-align: center;
@@ -223,6 +232,17 @@ html {
     margin-bottom: 50px;
   }
 
-  
+  /* @media */
+  @media only screen and (min-width: 992px) {
+    main {
+      width: 60%;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    main {
+      width: 40%;
+    }
+  }
 
 
