@@ -1,4 +1,5 @@
-![game-quiz](https://user-images.githubusercontent.com/87405768/132859499-e55a7b73-8007-40ce-8634-25e1afc7774a.png)
+![2021-09-12 (2)](https://user-images.githubusercontent.com/87405768/133003781-bc466e3d-8950-4881-a863-9b955a359c7e.png)
+
 # Quizgame
 JavaScript timed quiz game.  Keep those skills working.
 
