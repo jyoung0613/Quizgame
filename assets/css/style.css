@@ -8,241 +8,241 @@ Dark purple: #27126F;
 
 /*****Body*****/
 html {
-    height: 100%;
-  }
+  height: 100%;
+}
 
-  body {
-    /* system fonts */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #202020;
-    box-sizing: border-box;
-    margin: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+body {
+  /*System fonts*/
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #202020;
+  
+  box-sizing: border-box;
+  margin: 0; 
+  height: 100%;
 
-  /* text styles */
-  /* headings */
-  h1 {
-    margin: 0;
-    font-size: 2em;
-  }
+  display: flex;
+  flex-direction: column;
+}
 
-  /* icons */
-  .fas {
-    margin-right: 10px;
-  }
+/*****Text styles*****/
+/*Headings*/
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
 
-  /* clickable */
-  a {
-    color: #88115b;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-  }
+/*Icons*/
+.fas {
+  margin-right: 10px;
+}
 
-  a:hover,
-  a:focus,
-  a:active {
-    color: #88115b;
-  }
+/*Clickable*/
+a {
+  color: #88115b;
+  text-decoration: none;
 
-  button,
-  .back-button {
-    display: inline-block;
-    padding: 5px 15px;
-    margin: 0.5em 0.5em 0 0.5em;
-    border-radius: 4px;
-    border-style: none;
-    background-color: #781;
-    color: white;
-    cursor: pointer;
-    font-size: 1em;
-    text-align: center;
-    transition: background-color 0.2s ease-in-out;
-  }
+  transition: color 0.2s ease-in-out;
+}
 
-  .back-button:hover,
-  .back-button:focus,
-  .back-button:active,
-  button:hover,
-  button:focus,
-  button:active {
-    background-color: #88115b;
-    color: white;
-  }
+a:hover, 
+a:focus, 
+a:active {
+  color: #88115b;
+}
 
-  .back-button {
-    margin-left: 0;
-  }
+button,
+.back-button {
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 0.5em 0.5em 0 0.5em;
 
-  /* hidden */
-  .hidden {
-    display: none;
-  }
+  border-radius: 4px;
+  border-style: none;
 
-  /* nav */
-  nav {
-    padding: 15px;
-    border-bottom: 1px solid #CECECE;
-  }
+  background-color: #781;
 
-  /* sections */
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  text-align:center;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+.back-button:hover, 
+.back-button:focus, 
+.back-button:active,
+button:hover, 
+button:focus, 
+button:active{
+  background-color: #88115b;
+  color: white;
+}
+
+.back-button {
+  margin-left: 0;
+}
+
+/*****Hidden*****/
+.hidden {
+  display: none;
+}
+
+/*****Nav*****/
+nav {
+  padding: 15px;
+  border-bottom: 1px solid #CECECE;
+}
+
+/*****Sections*****/
+main {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  margin: auto;
+  height: 75%;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+/*****Start*****/
+#start {
+  text-align: center;
+}
+
+/*****Quiz-questions*****/
+#question {
+  font-size: 1.4em;
+}
+
+#timer, 
+.choice-status {
+  text-align: center;
+}
+
+#timer {
+  border-bottom: 1px solid #CECECE;
+  padding-bottom: 15px;
+
+  font-size: 1.35em;
+  font-weight: bold;
+}
+
+#time-remaining{
+  color: #88115b;
+}
+
+#choices {
+  list-style: none;
+  padding-left: 0;
+}
+
+#choices button {
+  margin-left: 0;
+}
+
+.choice-status {
+  font-size: 1.35em;
+  font-weight: bold;
+}
+
+#correct {
+ color:  #88115b;
+}
+
+#wrong {
+  color: #E81648;
+}
+
+/*gray line before choice status*/
+#quiz-questions, 
+#end {
+  border-bottom: 1px solid #CECECE;
+  padding-bottom: 15px;
+}
+
+/*****End*****/
+#score-text {
+  font-size: 1.2em;
+}
+
+#score {
+  font-weight: bold;
+  color: #88115b;
+}
+
+/*form*/
+#submit-score {
+  margin-bottom: 10px;
+}
+
+#submit-score label {
+  display: block;
+}
+
+#initials {
+  padding: 3px;
+  font-size: 1em;
+
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.error {
+  border: 1.5px solid red;
+}
+
+#error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+/*****Highscores*****/
+table {
+  border-spacing: 0 0.5em;
+}
+
+tr:nth-child(even) {
+  background-color: #EBEBEB;
+}
+
+td, th {
+  padding: 10px;
+}
+
+th {
+  border-bottom: 1px solid #CECECE;
+}
+
+td {
+  text-align: center;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+th:last-child,
+td:last-child  {
+  text-align: right;
+}
+
+#highscore-buttons {
+  margin-bottom: 50px;
+}
+
+/*****Breakpoints*****/
+@media only screen and (min-width: 992px) {
   main {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-    height: 75%;
-    box-sizing: border-box;
-    padding: 20px 0;
+    width: 60%;
   }
+}
 
-  footer {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    height: 25%;
-    box-sizing: border-box;
-    padding: 5px 0;
+@media only screen and (min-width: 1200px) {
+  main {
+    width: 40%;
   }
-
-  /* start */
-  #start {
-    text-align: center;
-  }
-  
-  /* quiz questions */
-  #question {
-    font-size: 1.4em;
-  }
-
-  #timer,
-  .choice-status {
-    text-align: center;
-  }
-
-  #timer {
-    border-bottom: 1px solid #CECECE;
-    padding-bottom: 15px;
-    font-size: 1.35em;
-    font-weight: bold;
-  }
-
-  #time-remaining {
-    color: #88115b;
-  }
-
-  #choices {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  #choices button {
-    margin-left: 0;
-  }
-
-  .choice-status {
-    font-size: 1.35em;
-    font-weight: bold;
-  }
-
-  #correct {
-    color: #88115b;
-  }
-
-  #wrong {
-    color: #E81648;
-  }
-
-  /* grey line before choice status */
-  #quiz-questions,
-  #end {
-    border-bottom: 1px solid #CECECE;
-    padding-bottom: 15px,
-  }
-  
-  /* end */
-  #score-text {
-    font-size: 1.2em;
-  }
-
-  #score {
-    font-weight: bold;
-    color: #88115b;
-  }
-
-  /* form */
-  #submit-score {
-    margin-bottom: 10px;
-  }
-
-  #submit-score label {
-    display: block;
-  }
-
-  #initials {
-    padding: 3px;
-    font-size: 1em;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  .error {
-    border: 1.5px solid red;
-  }
-
-  #error-message {
-    color: red;
-    margin-top: 5px;
-  }
-
-  /* high scores */
-  table {
-    border-spacing: 0 0.5em;
-  }
-
-  tr:nth-child(even) {
-    background-color: #EBEBEB;
-  }
-
-  td, th {
-    padding: 10px;
-  }
-
-  th {
-    border-bottom: 1px solid #CECECE;
-  }
-
-  td {
-    text-align: center;
-  }
-
-  th:first-child,
-  td:first-child {
-    text-align: left;
-  }
-
-  th:last-child,
-  td:last-child {
-    text-align: right;
-  }
-
-  #highscore-buttons {
-    margin-bottom: 50px;
-  }
-
-  /* @media */
-  @media only screen and (min-width: 992px) {
-    main {
-      width: 60%;
-    }
-  }
-
-  @media only screen and (min-width: 1200px) {
-    main {
-      width: 40%;
-    }
-  }
-
+}
 
